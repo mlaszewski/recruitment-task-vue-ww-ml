@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;700;900&display=swap');
+
+// variables
+$color-primary: #FFFFFF;
+$color-secondary: #AFAFAF;
+$color-fonts: #000;
+$color-accent: #FF4359;
+$color-accent--light: #FC435933;
+
+// Break-points
+$small: 300px;
+$medium: 1080px;
+
+smth {
+  //some CSS
+  @media screen and (max-width: $small) {
+    //do Smth
+  }
+  @media screen and (min-width: $medium) {
+    //do Smth
+  }
+}

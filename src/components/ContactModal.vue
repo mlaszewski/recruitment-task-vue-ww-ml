@@ -4,7 +4,7 @@
   >
     <div class="overdrop" @click="closeHandler"></div>
     <div class="modal">
-      <button class="close-button" @click="closeHandler">X</button>
+      <button class="close-button" @click="closeHandler"><img src="/icons/close.svg" alt="close icon"></button>
       <form @submit.prevent="submit" @reset="onReset">
         <div class="input-container">
           <label>IMIĘ</label>
@@ -75,11 +75,12 @@ export default {
         return;
       }
       this.isValid = true;
-      const {name, email, message} = this;
+      const {name, surname, email, accept} = this;
       const messageToSend = {
         name,
+        surname,
         email,
-        message,
+        accept
       };
       console.log(JSON.stringify(messageToSend));
     },
